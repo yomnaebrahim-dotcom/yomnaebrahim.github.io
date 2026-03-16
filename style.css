@@ -51,25 +51,35 @@ margin:auto;
 /* SKILLS */
 
 .skills{
-padding:40px;
+padding:60px;
+background:#ffffff;
 }
 
-.skill{
-max-width:600px;
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+max-width:900px;
 margin:auto;
-margin-bottom:20px;
-text-align:left;
+margin-top:30px;
 }
 
-.progress{
-background:#ddd;
-border-radius:20px;
+.skill-card{
+background:#f8fafc;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.3s;
 }
 
-.progress-bar{
-height:10px;
-background:#3b82f6;
-border-radius:20px;
+.skill-card:hover{
+transform:translateY(-5px);
+}
+
+.skill-card i{
+font-size:35px;
+color:#3b82f6;
+margin-bottom:10px;
 }
 
 
@@ -166,9 +176,15 @@ bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
-font-size:30px;
-padding:15px;
+font-size:28px;
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;
 border-radius:50%;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+z-index:1000;
 }
 
 
